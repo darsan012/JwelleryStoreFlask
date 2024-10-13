@@ -1,0 +1,17 @@
+body {
+    background-color: #f8f9fb;
+}
+
+table {
+    margin-top: 20px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.banner-image {
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the area proportionally */
+    width: 100%; /* Ensures it spans the full width */
+}

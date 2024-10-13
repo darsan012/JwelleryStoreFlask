@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='images/banner.jpg') }}" alt="Jewelry Store Banner" class="img-fluid banner-image">
+        <h1 class="mt-4">Welcome to Darshan Jewelry Store!</h1>
+        <p>Discover our exclusive collection of fine jewelry, tailored for elegance and luxury.</p>
+        <a href="/products" class="btn btn-primary btn-lg mt-3">View Our Products</a>
+    </div>
+{% endblock %}
