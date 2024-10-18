@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
-
-mongo_uri = os.getenv('MONGO_URI')
+user_name = os.getenv('MONGODB_USERNAME')
+user_password = os.getenv('MONGODB_PASSWORD')
+mongo_uri = f"mongodb+srv://{user_name}:{user_password}@cluster0.rzasl.mongodb.net"
 client = MongoClient(mongo_uri)
 db = client.shop_db
 products_collection = db.products
