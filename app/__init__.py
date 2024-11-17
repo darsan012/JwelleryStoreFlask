@@ -14,6 +14,7 @@ db = client.shop_db
 products_collection = db.products
 
 @app.route('/')
+@app.route('/home')
 def home():
     return render_template('home.html')
 
