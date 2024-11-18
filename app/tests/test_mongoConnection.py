@@ -6,6 +6,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+'''
+Testing mongodb connection using ping command. After connection is established the test is passed.
+If not test is failed and gives "Connection failed" message. 
+After test is done the connection is closed for further use.
+'''
+
 class TestMongoDBConnection(unittest.TestCase):
     # setting up the connection
     def setUp(self):

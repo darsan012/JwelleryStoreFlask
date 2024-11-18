@@ -1,4 +1,7 @@
-# running all the unit test through __init__.py, all tests in a single place
+"""
+ running all the unit test through __init__.py, all tests in a single place
+"""
+
 import unittest
 
 if __name__ == "__main__":

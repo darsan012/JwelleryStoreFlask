@@ -6,6 +6,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+'''
+Testing mongodb write operation. After the sample document is inserted, upon success it returns the id to the response.
+This id is being tested here for the none value. After that db is being queried using same id and value is tested with 
+the original document value. Best practice is to use test db so that it does not affect the real data for test data. After 
+ test is done the db is dropped and connection is closed'''
+
 class TestMongoDBWriteOperation(unittest.TestCase):
     # setting up the connection
     def setUp(self):

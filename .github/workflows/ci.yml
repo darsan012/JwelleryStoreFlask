@@ -1,4 +1,7 @@
-# Pipeline for continuous integration and deployment
+# Pipeline for continuous integration and deployment. This pipeline is running on ubuntu machine.
+# It sets up the necessary environment for testing the routes and database
+# Whenever developer pushes code to the GitHub, this ci.yml action runs and provides necessary insights
+# For secrets to run, create repository secrets under settings > secrets and variables > actions > new repository secrets
 name : CI pipeline
 
 on:

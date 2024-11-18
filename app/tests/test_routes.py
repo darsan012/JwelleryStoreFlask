@@ -1,6 +1,10 @@
 import unittest
 from app import app
 
+""" Testing /home route for get and post request. If get request it done, it should return
+success status code of 200. Our app does not have /post method so it should send 405 status code
+for that."""
+
 class TestRoutes(unittest.TestCase):
     def setUp(self):
         # setting up the instance of app for testing
