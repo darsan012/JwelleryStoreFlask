@@ -21,3 +21,6 @@ class TestRoutes(unittest.TestCase):
 
         # check for status code
         self.assertEqual(405, response.status_code)
+
+if __name__ == "__main__":
+    unittest.main()

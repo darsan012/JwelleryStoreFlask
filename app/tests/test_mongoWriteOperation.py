@@ -42,3 +42,6 @@ class TestMongoDBWriteOperation(unittest.TestCase):
         # Close the MongoDB connection
         self.client.close()
 
+if __name__ == "__main__":
+    unittest.main()
+

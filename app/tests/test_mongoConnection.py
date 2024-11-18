@@ -28,3 +28,6 @@ class TestMongoDBConnection(unittest.TestCase):
         # Close the connection after the test is done
         self.client.close()
 
+if __name__ == "__main__":
+    unittest.main()
+
