@@ -53,7 +53,7 @@ MONGODB_PASSWORD=your_password
 ```bash
 python app.py
 ```
-   Hurray! your app is running on http://127.0.0.1:5000/
+   Hurray! your app is running on http://127.0.0.1:5001/
 
 ### 6. Testing the application
 ```bash
