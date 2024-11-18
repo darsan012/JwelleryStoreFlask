@@ -11,20 +11,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Clone and checkout to the repository
+        uses: actions/checkout@v4 # Clones the repository in the working directory of the runner
 
       - name: Setting up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5 # setting up the python environment to version 3.9
         with:
           python-version: "3.9"
 
       - name: Installing dependencies
         run: |
-          python -m pip install --upgrade pip
+          python -m pip install --upgrade pip 
           pip install -r requirements.txt
 
       - name: Run tests
         run:
-          python -m unittest discover -s app/tests -p "__init__.py"
+          python app/tests __init__.py
 
