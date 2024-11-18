@@ -10,8 +10,8 @@ user_name = os.getenv('MONGODB_USERNAME')
 user_password = os.getenv('MONGODB_PASSWORD')
 mongo_uri = f"mongodb+srv://{user_name}:{user_password}@cluster0.rzasl.mongodb.net"
 client = MongoClient(mongo_uri)
-db = client.shop_db
-products_collection = db.products
+db = client.shop_db # shop_db is the name of the database in mongodb atlas
+products_collection = db.products # products is the name of the collection inside the database
 
 @app.route('/')
 @app.route('/home')

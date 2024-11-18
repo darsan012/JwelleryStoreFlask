@@ -21,8 +21,8 @@ class TestMongoDBConnection(unittest.TestCase):
         except ConnectionFailure:
             connected = False
 
-        # assert the connection
-        self.assertTrue(connected)
+        # assert the connection, with "Connection failed" message if connection is false
+        self.assertTrue(connected, "Connection failed")
 
     def tearDown(self):
         # Close the connection after the test is done
