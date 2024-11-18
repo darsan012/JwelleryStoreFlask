@@ -26,5 +26,5 @@ jobs:
 
       - name: Run tests
         run:
-          python app/tests __init__.py
+          python /app/tests __init__.py
 
