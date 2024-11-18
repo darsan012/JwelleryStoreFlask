@@ -6,10 +6,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = Flask(__name__)
+
+''' Getting necessary variables from .env '''
 user_name = os.getenv('MONGODB_USERNAME')
 user_password = os.getenv('MONGODB_PASSWORD')
 mongo_uri = f"mongodb+srv://{user_name}:{user_password}@cluster0.rzasl.mongodb.net"
-client = MongoClient(mongo_uri)
+
+client = MongoClient(mongo_uri) # creating mongo db client
 db = client.shop_db # shop_db is the name of the database in mongodb atlas
 products_collection = db.products # products is the name of the collection inside the database
 
