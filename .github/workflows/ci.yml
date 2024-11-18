@@ -10,6 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    # setting up the environment variables
+    env:
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+
     steps:
       - name: Clone and checkout to the repository
         uses: actions/checkout@v4 # Clones the repository in the working directory of the runner
